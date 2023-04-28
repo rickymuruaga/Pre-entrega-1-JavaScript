@@ -54,7 +54,7 @@ function vistaTecnica(dia,horario,confirmar){
 
 vistiaTecnica(dia,horario,confirmar); */
 
-let dia = prompt("NUESTROS TÉCNICOS DE INTERNET POR FIBRA ÓPTICA ESTÁN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DÍA QUE DESEE.");
+  let dia = prompt("NUESTROS TÉCNICOS DE INTERNET POR FIBRA ÓPTICA ESTÁN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DÍA QUE DESEE.");
   let horario = parseInt(prompt("LOS HORARIOS SON DE 9 A 18 HRS. INDIQUE EL HORARIO QUE DESEE."));
   let confirmar = prompt(`¿DESEA CONFIRMAR LA VISITA PARA EL DIA ${dia} A LAS ${horario} ? si || no`);
 

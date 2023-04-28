@@ -31,28 +31,8 @@ alert("No hay mas tickets")  */
 
 
 
+
 /* SIMULADOR INTERACTIVO */
-
-/* let dia = prompt("NUESTROS TECNICOS DE INTERNET POR FIBRA OPTICA ESTAN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DIA QUE DESEE.");
-
-let horario  = parseInt( prompt ("LOS HORARIOS SON DE 9 18 HRS. INDIQUE HORARIO QUE DESEE."));
-
-let confirmar = prompt ("¿DESEA CONFIRMAR LA VISITA?");
-
-
-function vistaTecnica(dia,horario,confirmar){
-    if(confirmar === "si"){
-            alert( `Nuestro tecnico visitara su domicilio el dia ${dia}, a las ${horario} hrs`);
-    }
-      else if (confirmar === "no" ){
-            alert("Ingrese datos nuevamente si desea una visita tecnica");
-    } 
-    else{
-        alert("Operacion invalida");
-    }
-}
-
-vistiaTecnica(dia,horario,confirmar); */
 
   let dia = prompt("NUESTROS TÉCNICOS DE INTERNET POR FIBRA ÓPTICA ESTÁN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DÍA QUE DESEE.");
   let horario = parseInt(prompt("LOS HORARIOS SON DE 9 A 18 HRS. INDIQUE EL HORARIO QUE DESEE."));
@@ -63,6 +43,7 @@ vistiaTecnica(dia,horario,confirmar); */
     let dia = prompt("NUESTROS TÉCNICOS DE INTERNET POR FIBRA ÓPTICA ESTÁN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DÍA QUE DESEE.");
     let horario = parseInt(prompt("LOS HORARIOS SON DE 9 A 18 HRS. INDIQUE EL HORARIO QUE DESEE."));
     confirmar = prompt(`¿DESEA CONFIRMAR LA VISITA PARA EL DIA ${dia} A LAS ${horario} ? si || no`);
+    
     visitaTecnica(dia, horario, confirmar);
   }
 

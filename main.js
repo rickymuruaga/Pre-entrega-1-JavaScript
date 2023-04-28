@@ -31,20 +31,23 @@ alert("No hay mas tickets")  */
 
 
 
-
 /* SIMULADOR INTERACTIVO */
 
-function gastos(num1 , num2, resta){
-    switch (resta) {
-     case "-":
-       return num1 - num2;
+let dia = prompt("NUESTROS TECNICOS DE INTERNET POR FIBRA OPTICA ESTAN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DIA QUE DESEE.");
+let horario = parseInt( prompt ("LOS HORARIOS SON DE 9 A 18 HRS. INDIQUE HORARIO QUE DESEE."));
+let confirmar = prompt ("¿DESEA CONFIRMAR LA VISITA?");
+
+
+function calendario (dia,horario,confirmar){
+    if(confirmar === "si"){
+            alert( `Nuestro tecnico visitara su domicilio el dia ${dia}, a las ${horario} hrs`);
+    }
+      else if (confirmar === "no" ){
+            alert("Ingrese datos nuevamente si desea una visita tecnica");
+    } 
+    else{
+        alert("Operacion invalida");
     }
 }
 
-let num1 = parseInt(prompt("Ingrese sueldo"));
-let resta = prompt("ingrese signo -");
-let num2 = parseInt(prompt("Ingrese Gasto"));
-
-
-let resultado = gastos(num1, num2, resta);
-alert(`Te quedan ${resultado} $pesos`);
+calendario (dia,horario,confirmar);

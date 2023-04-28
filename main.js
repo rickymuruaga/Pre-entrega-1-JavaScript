@@ -34,11 +34,13 @@ alert("No hay mas tickets")  */
 /* SIMULADOR INTERACTIVO */
 
 let dia = prompt("NUESTROS TECNICOS DE INTERNET POR FIBRA OPTICA ESTAN DISPONIBLES DE MARTES A SÁBADO. INDIQUE EL DIA QUE DESEE.");
-let horario = parseInt( prompt ("LOS HORARIOS SON DE 9 A 18 HRS. INDIQUE HORARIO QUE DESEE."));
+
+let horario  = parseInt( prompt ("LOS HORARIOS SON DE 9 18 HRS. INDIQUE HORARIO QUE DESEE."));
+
 let confirmar = prompt ("¿DESEA CONFIRMAR LA VISITA?");
 
 
-function calendario (dia,horario,confirmar){
+function vistaTecnica(dia,horario,confirmar){
     if(confirmar === "si"){
             alert( `Nuestro tecnico visitara su domicilio el dia ${dia}, a las ${horario} hrs`);
     }
@@ -50,4 +52,4 @@ function calendario (dia,horario,confirmar){
     }
 }
 
-calendario (dia,horario,confirmar);
+vistiaTecnica(dia,horario,confirmar);

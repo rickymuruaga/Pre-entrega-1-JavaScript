@@ -47,6 +47,7 @@ alert("No hay mas tickets")  */
     visitaTecnica(dia, horario, confirmar);
   }
 
+  
   function visitaTecnica(dia, horario, confirmar) {
     if (confirmar === "si") {
       if (dia === "lunes" || dia === "domingo") {
